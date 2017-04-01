@@ -1,0 +1,326 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F690 ]
+[d frameptr 6 ]
+"16 X:\DevSync\Projects\Android Bluetooth Media Controller\PIC16F690 - ABMC Code\pic_abmc.X\port_hal.c
+[e E30 . `uc
+PORT_A 0
+PORT_B 1
+PORT_C 2
+]
+"63
+[e E35 . `uc
+PIN_0 0
+PIN_1 1
+PIN_2 2
+PIN_3 3
+PIN_4 4
+PIN_5 5
+PIN_6 6
+PIN_7 7
+]
+"17 X:\DevSync\Projects\Android Bluetooth Media Controller\PIC16F690 - ABMC Code\pic_abmc.X\buttons.c
+[e E30 . `uc
+PORT_A 0
+PORT_B 1
+PORT_C 2
+]
+[e E35 . `uc
+PIN_0 0
+PIN_1 1
+PIN_2 2
+PIN_3 3
+PIN_4 4
+PIN_5 5
+PIN_6 6
+PIN_7 7
+]
+"80 X:\DevSync\Projects\Android Bluetooth Media Controller\PIC16F690 - ABMC Code\pic_abmc.X\main.c
+[e E1516 . `uc
+PORT_A 0
+PORT_B 1
+PORT_C 2
+]
+[e E1521 . `uc
+PIN_0 0
+PIN_1 1
+PIN_2 2
+PIN_3 3
+PIN_4 4
+PIN_5 5
+PIN_6 6
+PIN_7 7
+]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"25 X:\DevSync\Projects\Android Bluetooth Media Controller\PIC16F690 - ABMC Code\pic_abmc.X\interrupts.c
+[v _isr isr `II(v  1 e 0 0 ]
+"51 X:\DevSync\Projects\Android Bluetooth Media Controller\PIC16F690 - ABMC Code\pic_abmc.X\main.c
+[v _main main `(v  1 e 0 0 ]
+"62 X:\DevSync\Projects\Android Bluetooth Media Controller\PIC16F690 - ABMC Code\pic_abmc.X\port_hal.c
+[v _WritePin WritePin `(uc  1 e 1 0 ]
+"175
+[v _ReadPin ReadPin `(uc  1 e 1 0 ]
+"18 X:\DevSync\Projects\Android Bluetooth Media Controller\PIC16F690 - ABMC Code\pic_abmc.X\system.c
+[v _ConfigureOscillator ConfigureOscillator `(v  1 e 0 0 ]
+"14 X:\DevSync\Projects\Android Bluetooth Media Controller\PIC16F690 - ABMC Code\pic_abmc.X\timing.c
+[v _TimerDaemon TimerDaemon `(v  1 e 0 0 ]
+"14 X:\DevSync\Projects\Android Bluetooth Media Controller\PIC16F690 - ABMC Code\pic_abmc.X\uart.c
+[v _InitializeUART InitializeUART `(v  1 e 0 0 ]
+"40
+[v _UARTTransmit UARTTransmit `(v  1 e 0 0 ]
+"20 X:\DevSync\Projects\Android Bluetooth Media Controller\PIC16F690 - ABMC Code\pic_abmc.X\user.c
+[v _InitApp InitApp `(v  1 e 0 0 ]
+"160 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic16f690.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+[s S35 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+"175
+[u S42 . 1 `S35 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES42  1 e 1 @5 ]
+"209
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S52 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"223
+[u S58 . 1 `S52 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES58  1 e 1 @6 ]
+"247
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+[s S67 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"264
+[u S76 . 1 `S67 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES76  1 e 1 @7 ]
+[s S150 . 1 `uc 1 RABIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RABIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"331
+[u S159 . 1 `S150 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES159  1 e 1 @11 ]
+[s S197 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"395
+[s S205 . 1 `uc 1 T1IF 1 0 :1:0 
+`uc 1 T2IF 1 0 :1:1 
+]
+[u S208 . 1 `S197 1 . 1 0 `S205 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES208  1 e 1 @12 ]
+[s S371 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"837
+[u S380 . 1 `S371 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES380  1 e 1 @24 ]
+"881
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+[s S482 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRABPU 1 0 :1:7 
+]
+"1163
+[s S489 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S493 . 1 `S482 1 . 1 0 `S489 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES493  1 e 1 @129 ]
+"1212
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1261
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+[s S326 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1275
+[u S332 . 1 `S326 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES332  1 e 1 @134 ]
+"1299
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+[s S171 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"1380
+[s S179 . 1 `uc 1 T1IE 1 0 :1:0 
+`uc 1 T2IE 1 0 :1:1 
+]
+[u S182 . 1 `S171 1 . 1 0 `S179 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES182  1 e 1 @140 ]
+[s S257 . 1 `uc 1 SCS 1 0 :1:0 
+`uc 1 LTS 1 0 :1:1 
+`uc 1 HTS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+]
+"1525
+[s S263 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S268 . 1 `S257 1 . 1 0 `S263 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES268  1 e 1 @143 ]
+"1921
+[v _WPUA WPUA `VEuc  1 e 1 @149 ]
+[s S343 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2320
+[s S352 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SENB 1 0 :1:3 
+]
+[u S355 . 1 `S343 1 . 1 0 `S352 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES355  1 e 1 @152 ]
+"2369
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2430
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @154 ]
+[s S392 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"2508
+[u S401 . 1 `S392 1 . 1 0 ]
+[v _BAUDCTLbits BAUDCTLbits `VES401  1 e 1 @155 ]
+"2938
+[v _ANSEL ANSEL `VEuc  1 e 1 @286 ]
+"2999
+[v _ANSELH ANSELH `VEuc  1 e 1 @287 ]
+"49 X:\DevSync\Projects\Android Bluetooth Media Controller\PIC16F690 - ABMC Code\pic_abmc.X\main.c
+[v _test test `i  1 e 2 0 ]
+"61 X:\DevSync\Projects\Android Bluetooth Media Controller\PIC16F690 - ABMC Code\pic_abmc.X\timing.h
+[v _rawTick rawTick `VEuc  1 e 1 0 ]
+"51 X:\DevSync\Projects\Android Bluetooth Media Controller\PIC16F690 - ABMC Code\pic_abmc.X\main.c
+[v _main main `(v  1 e 0 0 ]
+{
+"112
+[v main@temp temp `[9]uc  1 a 9 7 ]
+"114
+[v main@i i `i  1 a 2 16 ]
+[s S141 SYSTEM_TIMERS 8 `uc 1 rawClockCounter 1 0 `uc 1 baseClock_msCounter 1 1 `uc 1 baseClock_100msCounter 1 2 `uc 1 baseClock_1000msCounter 1 3 `uc 1 rawClockTick 1 4 `uc 1 baseClock_msTick 1 5 `uc 1 baseClock_100msTick 1 6 `uc 1 baseClock_1000msTick 1 7 ]
+"61
+[v main@timerTicks timerTicks `S141  1 a 8 19 ]
+"74
+[v main@debugTrigger debugTrigger `uc  1 a 1 18 ]
+"77
+[v main@buttonOK buttonOK `uc  1 a 1 6 ]
+"61
+[v main@F1555 F1555 `S141  1 s 8 F1555 ]
+"106
+[v main@F1559 F1559 `[9]uc  1 s 9 F1559 ]
+"154
+} 0
+"62 X:\DevSync\Projects\Android Bluetooth Media Controller\PIC16F690 - ABMC Code\pic_abmc.X\port_hal.c
+[v _WritePin WritePin `(uc  1 e 1 0 ]
+{
+[v WritePin@portName portName `E30  1 a 1 wreg ]
+"64
+[v WritePin@outOfBound outOfBound `uc  1 a 1 1 ]
+"62
+[v WritePin@portName portName `E30  1 a 1 wreg ]
+[v WritePin@pinName pinName `E35  1 p 1 5 ]
+[v WritePin@state state `uc  1 p 1 6 ]
+"64
+[v WritePin@portName portName `E30  1 a 1 0 ]
+"173
+} 0
+"40 X:\DevSync\Projects\Android Bluetooth Media Controller\PIC16F690 - ABMC Code\pic_abmc.X\uart.c
+[v _UARTTransmit UARTTransmit `(v  1 e 0 0 ]
+{
+[v UARTTransmit@b b `i  1 p 2 5 ]
+"43
+} 0
+"14 X:\DevSync\Projects\Android Bluetooth Media Controller\PIC16F690 - ABMC Code\pic_abmc.X\timing.c
+[v _TimerDaemon TimerDaemon `(v  1 e 0 0 ]
+{
+[s S141 SYSTEM_TIMERS 8 `uc 1 rawClockCounter 1 0 `uc 1 baseClock_msCounter 1 1 `uc 1 baseClock_100msCounter 1 2 `uc 1 baseClock_1000msCounter 1 3 `uc 1 rawClockTick 1 4 `uc 1 baseClock_msTick 1 5 `uc 1 baseClock_100msTick 1 6 `uc 1 baseClock_1000msTick 1 7 ]
+[v TimerDaemon@timerTicks timerTicks `*.4S141  1 a 1 wreg ]
+[v TimerDaemon@timerTicks timerTicks `*.4S141  1 a 1 wreg ]
+"17
+"14
+[v TimerDaemon@timerTicks timerTicks `*.4S141  1 a 1 6 ]
+"53
+} 0
+"14 X:\DevSync\Projects\Android Bluetooth Media Controller\PIC16F690 - ABMC Code\pic_abmc.X\uart.c
+[v _InitializeUART InitializeUART `(v  1 e 0 0 ]
+{
+"38
+} 0
+"20 X:\DevSync\Projects\Android Bluetooth Media Controller\PIC16F690 - ABMC Code\pic_abmc.X\user.c
+[v _InitApp InitApp `(v  1 e 0 0 ]
+{
+"123
+} 0
+"18 X:\DevSync\Projects\Android Bluetooth Media Controller\PIC16F690 - ABMC Code\pic_abmc.X\system.c
+[v _ConfigureOscillator ConfigureOscillator `(v  1 e 0 0 ]
+{
+"31
+} 0
+"25 X:\DevSync\Projects\Android Bluetooth Media Controller\PIC16F690 - ABMC Code\pic_abmc.X\interrupts.c
+[v _isr isr `II(v  1 e 0 0 ]
+{
+"61
+} 0
