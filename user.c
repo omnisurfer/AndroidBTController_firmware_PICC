@@ -20,9 +20,9 @@
 void InitApp(void)
 {
     /*DIGITAL IOs*/
-    TRISC = 0x00, TRISA = 0x00, TRISB = 0x00;
-    PORTC = 0x00, PORTA = 0x00, PORTB = 0x00;
-    WPUA = 0x00;
+    TRISA = 0xFF, TRISB = 0x50, TRISC = 0x0B;    
+    WPUA = 0x17, WPUB = 0x50;
+    PORTA = 0x00, PORTB = 0x00, PORTC = 0x00;
 
     /*ANALOG IOs*/
     //No analog inputs
@@ -31,7 +31,7 @@ void InitApp(void)
 
     /*INTERRUPTS*/
 #if 0
-    //Disalbe all peripheral 1 interrupts
+    //Disable all peripheral 1 interrupts
 
     PIE1bits.ADIE = 0;
     PIE1bits.CCP1IE = 0;
@@ -118,6 +118,9 @@ void InitApp(void)
 
     //Timer 0 Interrupt ON
     INTCONbits.T0IE = 1;
+    
+    //turn on global pull-ups
+    OPTION_REGbits.nRABPU = 0;
 
 
 }

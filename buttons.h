@@ -25,6 +25,16 @@ extern "C" {
 /* Button Function Prototypes                                                 */
 /******************************************************************************/
 
-bool debouncedPortPin(PortName portName, PortPin pinName, char* state);
+bool portEdgeDetection(PortName portName, PortPin pinName, char* state);
+
+void debounceButton(struct DEBOUNCED_BUTTON* button);
+
+struct DEBOUNCED_BUTTON
+{
+    char debounceState;
+    bool pressed;
+    PortName portName;
+    PortPin portPin;
+};
 
 
