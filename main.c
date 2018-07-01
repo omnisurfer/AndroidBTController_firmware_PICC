@@ -382,7 +382,7 @@ void WindowsKeyControl(struct DEBOUNCED_BUTTON* button, char *rawHIDArrayPointer
         case 0:
             if (button->pressed) {
                 rawHIDArrayPointer[1] = 0x08;
-                //rawHIDArrayPointer[3] = 0xE3;
+                //rawHIDArrayPointer[3] = 0xE7;
 
                 for (int i = 0; i < rawHIDArraySize;) {
                     if (TXSTAbits.TRMT == 1) {
@@ -397,7 +397,7 @@ void WindowsKeyControl(struct DEBOUNCED_BUTTON* button, char *rawHIDArrayPointer
         case 1:
             if (!button->pressed) {
                 rawHIDArrayPointer[1] = 0x00;
-                //rawHIDArrayPointer[3] = 0x00;
+                rawHIDArrayPointer[3] = 0xe7;
 
                 for (int i = 0; i < rawHIDArraySize;) {
                     if (TXSTAbits.TRMT == 1) {
